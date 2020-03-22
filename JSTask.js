@@ -4,8 +4,13 @@ console.log(myName);
 console.log(myCourses);
 
 //myCourses is Even
+
+let evenNumbers = [];
+
 for (let i = 1; i <= 200; i++) {
 	if (i % 2 === 0) {
-		console.log(i);
+		evenNumbers.push(i);
 	}
 }
+
+console.log(evenNumbers);
