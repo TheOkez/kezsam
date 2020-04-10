@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!--<link rel="stylesheet" type="text/css" href="piggy.css" media="screen" />-->
+    <style>
+    *, *:before, *:after{
+	box-sizing: inherit;
+    }
+
+    html{
+        font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background-color: #062863;
+    }
+
+    .image{
+        display: flex;
+    }
+    .image > img{
+        margin:  5% auto 1% auto;
+    }
+
+
+    .wrapper{
+        width:25%;
+        height: 820px;
+        display: block;
+        flex-flow: row nowrap;
+        background-color: #fff;
+        border-radius: 1.25rem 1.25rem 1.25rem 0rem;
+        margin: 2% auto 3% auto;
+        padding: 2rem;
+
+    }
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+       color: #083e9e;
+       text-align: center;
+       font-weight: 700;
+       font-family: U8,sans-serif;
+        margin: 0;
+        font-size: 1.25rem;
+    }
+    #one{
+        color: #4a5568;
+        text-align: center;
+        font-family: Karla,sans-serif;
+        font-size: .875rem;
+        margin: 0;
+    }
+
+
+
+
+    .form{
+        overflow-y: auto;
+        margin-top: 2rem;
+        flex-direction: column;
+        display: flex;
+        border: 0 solid #e2e8f0;
+        line-height: 1.5;
+    }
+    .info{
+        position: relative;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        display: flex;
+        border: 0 solid #e2e8f0;
+        line-height: 1.5
+    }
+
+
+    .label{
+        color: #4a5568;
+        margin-bottom: .25rem;
+        font-weight: 700;
+        font-family: U8,sans-serif;
+        line-height: 2;
+        font-size: .75rem;
+
+    }
+
+    .input{
+        color: #1a202c;
+        background-color: #edf2f7;
+        font-family: U8,sans-serif;
+        font-size: 100%;
+        border: 0 solid #e2e8f0;
+        font: 400px;
+        line-height: 3;
+        display: inline-block;
+        padding-left: .75rem;
+        border-radius: .5rem;
+
+    }
+    select{
+        height: 50px;
+        border-radius: .5rem;
+    }
+
+    button{
+        background-color: rgb(8, 62, 158);
+
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1rem;
+        font-weight: 700;
+        font-family: U8,sans-serif;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+         border-radius: inherit;
+        line-height: 2;
+        cursor: pointer;
+        border: 0 solid #e2e8f0;
+        overflow: visible;
+        margin: 0;
+
+
+    }
+    .clicks{
+        border-top-left-radius: .75rem;
+        border-bottom-right-radius: .75rem;
+        border-top-right-radius: .75rem;
+    }
+    .footer{
+        font-size: .75rem;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255)
+        white-space: nowrap;
+        padding-left: .75rem;
+        padding-right: .75rem;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        line-height: 1.5;
+        margin-top: 2rem;
+        font-weight: 400;
+        font-family: Karla,sans-serif;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        text-decoration: inherit;   
+
+    }
+
+    </style>
+	<title> PiggyVest | DashBoard </title>
+</head>
+
+	<body>
+        <div>
+            <div class="image">
+               <img src="https://dashboard.piggyvest.com/static/media/piggyvest-logo.0b78a8fa.svg" alt="PiggyVest Logo">
+            </div>
+            
+            <div class="wrapper">
+                <header>
+                    <h1>Create a Secure Account</h1>
+                    <p id="one">Welcome to the future of Savings Investments</p>
+                </header>
+                <form class="form">
+                    <div class="info">
+                        <label class="label" for="sub">Full Name</label>
+                        <input class="input" name="fullname" placeholder="Full Name" id="Full Name" type="text" value>
+                    </div>
+                    <div class="info">
+                        <label class="label" for="sub">Email Address</label>
+                        <input class="input" name="email" placeholder="Email Address" id="Email Address" type="email" value>
+                    </div>
+                    <div class="info">
+                        <label class="label" for="sub">Phone Number</label>
+                        <input class="input" name="phone" placeholder="Phone Number" id="Phone Number" type="tel" value>
+                    </div>
+                    <div class="info">
+                        <label class="label" for="sub">Password</label>
+                        <input class="input" name="fullname" placeholder="Password" id="Password" type="Password" value>
+                    </div>
+                    <div class="info">
+                        <label class="label" for="sub">Referrer Phone or Promo Code (Optional)</label>
+                        <input class="input" name="promocode" placeholder="Referrer Phone or Code" id="Referrer Phone or Promo Code (Optional)" type="text" value>
+                    </div>
+                    <div class="info">
+                        <label class="label" for="sub">How Did You Hear About Us? (Optional)</label>
+                        <select class="input" name="Click To Select">
+                            <option value="Click To Select">Click To Select</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Friend/Family/Coworker Referral">Friend/Family/Coworker Referral</option>
+                             <option value="Google search">Google search</option>
+                             <option value="Google playstore">Google playstore</option>
+                             <option value="Online Blog">Online Blog</option>
+                             <option value="Local Newspaper">Local Newspaper</option>
+                             <option value="">At an event</option>
+                        </select>
+                        
+                    </div>
+                    <div class="info" id="check">
+                        <button class="clicks" type="submit">
+                        Create Account
+                        </button>
+                    </div>
+                   
+                    
+                
+                </form>
+                
+            </div>
+            <a class="footer" href="https://dashboard.piggyvest.com/login">Already have an account?  Log In</a>
+        </div>
+                    
+    </body>
+</html>
+
