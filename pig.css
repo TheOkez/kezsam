@@ -1,0 +1,33 @@
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    line-height: 1.5;
+}
+
+#root {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #062863;
+}
+.all{
+   overflow-x: auto;
+    overflow-y: auto;
+    align-items: center;
+
+   
+}
+.container{
+    width: 91.666667%;
+    background-color: #fff;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    display: block;
+    
+}
